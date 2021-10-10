@@ -103,8 +103,14 @@ def get_longest_average_below(lst,average):
                 rezultat=lst[i:j+1]
 
     return rezultat
+def test_get_longest_average_below():
+    assert get_longest_average_below([10,11,12,13],11.75)==[10,11,12,13]
+    assert get_longest_average_below([10,11,12,13],10.75)==[10,11]
+    assert get_longest_average_below([],1)==[]
 def main():
     test_prime()
+    test_get_longest_average_below()
+    test_get_longest_all_not_prime()
     lst = []
 
     while True:
