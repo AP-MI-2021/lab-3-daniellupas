@@ -16,6 +16,7 @@ def get_largest_prime_below(n):
 
 def get_base_2(n):
     x = int(x)
+    # daniel 1234512312321
     lista=[]
     s=''
     while x:
